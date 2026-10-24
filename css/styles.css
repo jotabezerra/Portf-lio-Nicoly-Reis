@@ -12,6 +12,7 @@
 }
 
 * { box-sizing: border-box; }
+.symbol-icon { display: inline-block; width: 1em; height: 1em; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; vertical-align: middle; }
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
@@ -123,6 +124,7 @@ h1, h2, h3, p { margin-top: 0; }
 .ticker-inner { display: flex; min-height: 56px; align-items: center; justify-content: space-between; gap: 18px; }
 .ticker-inner > span:not(.ticker-star) { font-size: .76rem; font-weight: 600; letter-spacing: .015em; }
 .ticker-star { color: var(--accent-deep); font-size: 1.1rem; }
+.ticker-star .symbol-icon { width: 1.1em; height: 1.1em; }
 
 .section { padding-block: 106px; }
 .services { background: var(--paper); }
@@ -227,6 +229,7 @@ h1, h2, h3, p { margin-top: 0; }
   .mobile-menu summary { padding: 10px 12px; border: 1px solid rgba(244, 243, 237, .7); color: var(--paper); cursor: pointer; font-size: .74rem; font-weight: 650; list-style: none; }
   .mobile-menu summary::-webkit-details-marker { display: none; }
   .mobile-menu summary span { margin-left: 7px; color: var(--accent); }
+  .mobile-menu summary .menu-icon { width: .85em; height: .85em; }
   .mobile-menu-panel { position: absolute; z-index: 2; top: calc(100% + 8px); right: 0; display: grid; min-width: 180px; padding: 6px; border: 1px solid rgba(244, 243, 237, .18); background: var(--forest); box-shadow: 0 10px 24px rgba(43, 33, 29, .24); }
   .mobile-menu-panel a { padding: 12px; color: var(--paper); font-size: .82rem; font-weight: 600; text-decoration: none; }
   .mobile-menu-panel a:hover { background: rgba(213, 139, 109, .16); color: var(--accent); }
